@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -11,21 +13,45 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
-        <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+        {/* Tripify Project */}
+        <div>
+          <ProjectCard
+            src="/tripify-homepage3.jpg"
+            title="Tripify"
+            description="It is a MERN stack-based tour planner website featuring Augmented Reality (AR) of hotel rooms for an immersive travel experience. 🚀✨"
+            website="https://github.com/sarvesh8804/Tripify"
+          />
+        </div>
+
+        {/* Cortex Project */}
+        <div>
+          <ProjectCard
+            src="/cortex-homepage2.jpg"
+            title="Cortex"
+            description="It is a Python-based voice assistant that navigates your computer, fetches news, searches multiple engines, solves math, draws shapes, plays music, and more—all through voice commands. 🎤🤖"
+            website="https://github.com/sarvesh8804/Tripify"
+          />
+        </div>
+
+        {/* JobMarshal Project */}
+        <div>
+          <ProjectCard
+            src="/jobmarshal-homepage.jpg"
+            title="JobMarshal"
+            description="It is a Next.js MERN website powered by Prisma's PostgreSQL, integrating multiple APIs and a payment gateway to help daily wage workers find jobs efficiently. 🚀💼"
+            website="https://github.com/sarvesh8804/Tripify"
+          />
+        </div>
+
+        {/* MindZapper Project */}
+        <div>
+          <ProjectCard
+            src="/mindzapper-homepage.jpg"
+            title="MindZapper"
+            description="It is a Java-based quiz application with a MySQL database, offering challenges across various coding domains along with a leaderboard to track top performers. 🚀💻"
+            website="https://github.com/sarvesh8804/Tripify"
+          />
+        </div>
       </div>
     </div>
   );

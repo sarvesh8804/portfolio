@@ -24,21 +24,20 @@ const HeroContent = () => {
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            Sarvesh Portfolio Website
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[800px] w-auto h-auto"
         >
           <span>
-            Providing
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
-              the best{" "}
+              Synergizing{" "}
             </span>
-            project exprience
+            Technology and Creativity
           </span>
         </motion.div>
 
@@ -46,26 +45,77 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          I&apos;m a Full Stack Software Engineer with experience in Website and
+          Software development. Check out my projects and skills.
         </motion.p>
-        <motion.a
+        <motion.div
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          className="flex gap-4" // Added flex and gap to align buttons horizontally
         >
-          Learn More!
-        </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://drive.google.com/file/d/1IaXcVzs7fvv0VW8PxpUP--ZZPGmrif6W/view"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-blue-600"
+          >
+            Resume
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://github.com/sarvesh8804"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            GitHub
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://linkedin.com/in/sarvesh-h-74836b205"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            Linked In
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://www.geeksforgeeks.org/user/sarvesh_huddar/"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            G F G
+          </motion.a>
+        </motion.div>
       </div>
 
       <motion.div
         variants={slideInFromRight(0.8)}
+        // initial={{ rotate: 0 }}
+        // animate={{ rotate: 45 }}
+        // transition={{ duration: 1.5 }}
+        animate={{
+          rotate: [30, 45, 30], // Rotate from 0 to 45 and back to 0
+        }}
+        transition={{
+          duration: 4, // Duration for one complete cycle
+          repeat: Infinity, // Repeat the animation infinitely
+          repeatType: 'loop', // Keep it looping continuously
+          ease: 'easeInOut', // Smooth easing for the animation
+        }}
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/sarvesh3.png"
           alt="work icons"
           height={650}
           width={650}
+          className="relative drop-shadow-[0_0_25px_rgba(128,0,255,0.8)]"
         />
       </motion.div>
     </motion.div>

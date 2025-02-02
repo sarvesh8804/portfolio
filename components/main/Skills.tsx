@@ -56,9 +56,9 @@ const Skills = () => {
         {Full_stack.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
+            src={image}
+            width={image}
+            height={image}
             index={index}
           />
         ))}
@@ -67,9 +67,9 @@ const Skills = () => {
         {Other_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
-            src={image.Image}
-            width={image.width}
-            height={image.height}
+            src={image}
+            width={image}
+            height={image}
             index={index}
           />
         ))}
