@@ -45,8 +45,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website and
-          Software development. Check out my projects and skills.
+          I’m a B.E. Information Technology student at Mumbai University with a passion for problem-solving, clean code, and continuous learning. I'm curious, self-driven, and enjoy turning complex challenges into simple, effective solutions. Competitive programming and development have shaped me into a logical thinker who thrives in fast-paced, collaborative environments.
         </motion.p>
         <motion.div
           variants={slideInFromLeft(1)}
@@ -55,7 +54,7 @@ const HeroContent = () => {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            href="https://drive.google.com/file/d/1IaXcVzs7fvv0VW8PxpUP--ZZPGmrif6W/view"
+            href="https://drive.google.com/file/d/1b5IxXmvqlCAxnzWroYAMrCYCRfEpuUVu/view?usp=sharing"
             target="_blank"
             className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-blue-600"
           >
@@ -81,7 +80,7 @@ const HeroContent = () => {
           >
             Linked In
           </motion.a>
-
+          <br />
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -90,6 +89,36 @@ const HeroContent = () => {
             className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
           >
             G F G
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://leetcode.com/u/sarvesh_huddar/"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            Leetcode
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://codeforces.com/profile/sarvesh.huddar1"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            Codeforces
+          </motion.a>
+
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            href="https://www.codechef.com/users/noobcoder_8804"
+            target="_blank"
+            className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-gray-800"
+          >
+            CodeChef
           </motion.a>
         </motion.div>
       </div>
@@ -105,8 +134,8 @@ const HeroContent = () => {
         transition={{
           duration: 4, // Duration for one complete cycle
           repeat: Infinity, // Repeat the animation infinitely
-          repeatType: 'loop', // Keep it looping continuously
-          ease: 'easeInOut', // Smooth easing for the animation
+          repeatType: "loop", // Keep it looping continuously
+          ease: "easeInOut", // Smooth easing for the animation
         }}
         className="w-full h-full flex justify-center items-center"
       >

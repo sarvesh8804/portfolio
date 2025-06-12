@@ -11,7 +11,20 @@ interface Props {
 
 const ProjectCard = ({ src, title, description, website }: Props) => {
   return (
-    <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]">
+    <motion.div
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] group"
+    >
+      {/* Invisible link layer over entire card */}
+      <a
+        href={website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="absolute inset-0 z-10"
+      />
+
+      {/* Card content */}
       <Image
         src={src}
         alt={title}
@@ -20,7 +33,7 @@ const ProjectCard = ({ src, title, description, website }: Props) => {
         className="w-full object-contain"
       />
 
-      <div className="relative p-4">
+      <div className="relative p-4 z-20">
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className="mt-2 text-gray-300">{description}</p>
         <br />
@@ -29,13 +42,14 @@ const ProjectCard = ({ src, title, description, website }: Props) => {
           whileTap={{ scale: 0.9 }}
           href={website}
           target="_blank"
-          className="mt-4 py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-blue-600"
+          rel="noopener noreferrer"
+          className="mt-4 py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-blue-600 inline-block"
         >
           View on Github
         </motion.a>
         <br />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
