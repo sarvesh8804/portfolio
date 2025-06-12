@@ -45,7 +45,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I’m a B.E. Information Technology student at Mumbai University with a passion for problem-solving, clean code, and continuous learning. I'm curious, self-driven, and enjoy turning complex challenges into simple, effective solutions. Competitive programming and development have shaped me into a logical thinker who thrives in fast-paced, collaborative environments.
+          I&apos;m a B.E. Information Technology student at Mumbai University with a passion for problem-solving, clean code, and continuous learning. I&apos;m curious, self-driven, and enjoy turning complex challenges into simple, effective solutions. Competitive programming and development have shaped me into a logical thinker who thrives in fast-paced, collaborative environments.
         </motion.p>
         <motion.div
           variants={slideInFromLeft(1)}
