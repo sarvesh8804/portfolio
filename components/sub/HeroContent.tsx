@@ -54,7 +54,7 @@ const HeroContent = () => {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            href="https://drive.google.com/file/d/1b5IxXmvqlCAxnzWroYAMrCYCRfEpuUVu/view?usp=sharing"
+            href="https://drive.google.com/file/d/1B9VLMSvZopkUECFrunyIdy-XpYkArmQi/view?usp=sharing"
             target="_blank"
             className="py-2 px-4 button-primary text-center text-white cursor-pointer rounded-lg bg-blue-600"
           >
